@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class ApplicationConnection {
     private Connection getConnection() throws SQLException {
-        String url = "jdbs:postgresql://localhost:5433/skypro";
+        String url = "jdbc:postgresql://localhost:5432/skypro";
         String username = "postgres";
         String password = "4414";
         return DriverManager.getConnection(url,username,password);

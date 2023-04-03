@@ -8,11 +8,11 @@ import java.util.List;
 public interface EmployeeDAO {
     Employee findById(Integer id) throws SQLException;
 
-    void addNewEmployee(String firstName, String lastName, String gender, Integer age, Integer cityId) throws SQLException;
+    Integer addNewEmployee(Employee employee);
 
-    List<Employee> getAllEmployees()throws SQLException;
+    List<Employee> getAllEmployees();
 
-    void updateEmployee(Integer id, String firstName, String lastName, String gender, Integer age, Integer cityId) throws SQLException;
+    void updateEmployee(Employee employee, int id);
 
-    void deleteEmployeeById(Integer id) throws SQLException;
+    void deleteEmployee(Employee employee);
 }

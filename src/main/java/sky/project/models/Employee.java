@@ -29,6 +29,7 @@ public class Employee {
         this.age = age;
         this.cityId = cityId;
     }
+    public Employee(){};
 
     @Override
     public boolean equals(Object o) {

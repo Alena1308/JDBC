@@ -20,6 +20,8 @@ public class Employee {
     @Column(name = "age")
     private Integer age;
     @Column(name = "city_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "city_id")
     private int cityId;
 
     public Employee(String firstName, String lastName, String gender, Integer age, int cityId) {
